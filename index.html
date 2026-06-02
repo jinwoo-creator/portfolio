@@ -1,41 +1,280 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>이진우 Portfolio</title>
-</head>
-<body>
-    <h1>이진우 Portfolio</h1>
+  <meta charset="UTF-8">
+  <title>Lee Jinwoo Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
 
+    header {
+      background-color: #1f4e79;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1f4e79;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1f4e79;
+      border-bottom: 3px solid #1f4e79;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 25px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skill-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background-color: #eef4fa;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .project {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-left: 5px solid #1f4e79;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #1f4e79;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #1f4e79;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Lee Jinwoo Portfolio</h1>
+    <p>AI Engineering Student | Machine Learning | Data Analysis | GitHub Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-        조선대학교 인공지능공학과 재학 중이며
-        머신러닝, Computer Vision, 데이터 분석에 관심이 있습니다.
+      안녕하세요. 저는 조선대학교 인공지능공학과에서 인공지능과 소프트웨어 개발을 공부하고 있습니다.
+      Machine Learning, Computer Vision, Data Analysis 분야에 관심이 있으며,
+      향후 AI 서비스 개발자 또는 데이터 기반 문제 해결 역량을 갖춘 개발자로 성장하는 것을 목표로 합니다.
     </p>
 
+    <ul>
+      <li><strong>전공:</strong> 인공지능공학</li>
+      <li><strong>관심 분야:</strong> Machine Learning, Computer Vision, Data Analysis</li>
+      <li><strong>진로 목표:</strong> AI Developer / Data Scientist</li>
+      <li><strong>현재 학습 중인 기술:</strong> Python, C++, Git, scikit-learn, Docker</li>
+      <li><strong>AI 관심 주제:</strong> 머신러닝 분류 모델, 차원 축소, 데이터 시각화</li>
+    </ul>
+  </section>
+
+  <section id="education">
     <h2>Education</h2>
     <ul>
-        <li>조선대학교 인공지능공학과</li>
-        <li>2학년</li>
+      <li><strong>School:</strong> Chosun University</li>
+      <li><strong>Department:</strong> Artificial Intelligence Engineering</li>
+      <li><strong>Year:</strong> 2nd year</li>
+      <li><strong>Relevant Coursework:</strong> Machine Learning, Data Structures, C++ Programming, Signals and Systems, Git and Version Control</li>
+      <li><strong>GPA:</strong> Optional</li>
     </ul>
+  </section>
 
+  <section id="skills">
     <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>C++</li>
-        <li>Git/GitHub</li>
-        <li>scikit-learn</li>
-    </ul>
 
+    <div class="skill-box">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul>
+          <li>Python: Basic ~ Intermediate</li>
+          <li>C/C++: Basic</li>
+          <li>JavaScript: Basic</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>AI / ML</h3>
+        <ul>
+          <li>scikit-learn: Basic</li>
+          <li>PyTorch: Basic</li>
+          <li>Machine Learning: Basic</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git: Basic</li>
+          <li>GitHub: Basic</li>
+          <li>VS Code: Basic</li>
+          <li>Docker: Basic</li>
+          <li>Jupyter Notebook: Basic</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li>머신러닝 분류 프로젝트</li>
-        <li>Git 실습 프로젝트</li>
-    </ul>
 
+    <div class="project">
+      <h3>Machine Learning Classification Project</h3>
+      <p><strong>Summary:</strong> 여러 데이터셋을 활용하여 머신러닝 분류 모델의 성능을 비교한 프로젝트입니다.</p>
+      <p><strong>Period:</strong> 2026</p>
+      <p><strong>Tech Stack:</strong> Python, scikit-learn, NumPy, Matplotlib</p>
+      <p><strong>Role:</strong> 데이터 전처리, 모델 학습, 성능 비교, 결과 시각화</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Wine, Digits, Olivetti Faces 데이터셋 사용</li>
+        <li>PCA, LDA, KPCA를 이용한 차원 축소</li>
+        <li>Random Forest, k-NN, Kernel SVM 성능 비교</li>
+      </ul>
+      <p><strong>Results:</strong> 차원 축소 전후의 정확도 변화를 비교하고 최적의 모델 조합을 분석했습니다.</p>
+    </div>
+
+    <div class="project">
+      <h3>Git Version Control Practice</h3>
+      <p><strong>Summary:</strong> Git branch, merge, rebase, stash 기능을 실습한 프로젝트입니다.</p>
+      <p><strong>Period:</strong> 2026</p>
+      <p><strong>Tech Stack:</strong> Git, GitHub, WSL</p>
+      <p><strong>Role:</strong> Git 명령어 실습 및 충돌 해결</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Branch 생성 및 이동</li>
+        <li>3-way merge 실습</li>
+        <li>Rebase 충돌 해결</li>
+        <li>Stash 저장 및 복원</li>
+      </ul>
+      <p><strong>Results:</strong> Git 협업 과정에서 발생하는 충돌 상황을 이해하고 해결 방법을 학습했습니다.</p>
+    </div>
+
+    <div class="project">
+      <h3>RNN vs SSM Analysis</h3>
+      <p><strong>Summary:</strong> 신호 및 시스템 관점에서 RNN과 SSM의 학습 효율 차이를 분석한 프로젝트입니다.</p>
+      <p><strong>Period:</strong> 2026</p>
+      <p><strong>Tech Stack:</strong> Signal and System Theory, AI Model Analysis</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>RNN의 순차 처리 구조 분석</li>
+        <li>Gradient Vanishing 문제 설명</li>
+        <li>SSM의 Convolution 기반 병렬 처리 구조 분석</li>
+      </ul>
+      <p><strong>Results:</strong> 긴 시퀀스 데이터 학습에서 SSM이 RNN보다 효율적인 이유를 정리했습니다.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>Machine Learning Course Project</li>
+      <li>Git / GitHub Practice</li>
+      <li>C++ Programming Practice</li>
+      <li>Personal AI Study</li>
+      <li>Data Analysis Practice</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>CV / Resume</h2>
+    <p>아래 링크를 통해 이력서 PDF를 확인할 수 있습니다.</p>
+    <a class="button" href="resume.pdf">Download My Resume</a>
+    <p><small>※ PDF에는 주민등록번호, 주소, 전화번호 등 민감한 개인정보를 포함하지 않습니다.</small></p>
+  </section>
+
+  <section id="career">
+    <h2>Career Goal / Future Plan</h2>
+    <ul>
+      <li>AI Developer</li>
+      <li>Data Scientist</li>
+      <li>Computer Vision Engineer</li>
+      <li>Machine Learning Engineer</li>
+      <li>AI Service Developer</li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
     <ul>
-        <li>GitHub: jinwoo-creator</li>
+      <li><strong>Email:</strong> your-email@example.com</li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/jinwoo-creator">https://github.com/jinwoo-creator</a></li>
+      <li><strong>Portfolio:</strong> <a href="https://jinwoo-creator.github.io/portfolio/">https://jinwoo-creator.github.io/portfolio/</a></li>
     </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Lee Jinwoo. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
